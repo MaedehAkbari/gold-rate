@@ -1,5 +1,4 @@
 import react, {useState} from 'react'
-
  const api="https://gist.githubusercontent.com/ahmadpanah/e6225b11235a04397b813d0de6e6f5ad/raw/ab559a1146b5e6f2d57bd546c20c090842d5fcc6/sana.json"
  function App() {
   const [arz, setarz] =useState({});
@@ -14,10 +13,11 @@ import react, {useState} from 'react'
     <div className="app">
       
     <main>
-    <div className="Header"> قیمت ارز و طلا  </div>
+    <div className="Header"> نرخ ارز  </div>
       <div className="arz"> 
       {(typeof arz.sana != "undefined") ? (
-      <div className="arz_box">دلار آمریکا     
+      <div className="arz_box">دلار آمریکا 
+       <div className="update"> تاریخ بروزرسانی : &nbsp;{arz.sana.data[0].updated_at}</div>     
         <div className="kharid">خرید:&nbsp;{arz.sana.data[0].p}</div> 
         <div className="forosh">فروش:&nbsp;{arz.sana.data[16].p}</div>
         </div>
@@ -25,24 +25,29 @@ import react, {useState} from 'react'
 
          {(typeof arz.sana != "undefined") ? (
          <div className="arz_box">فرانک سوئیس
+         <div className="update"> تاریخ بروزرسانی : &nbsp;{arz.sana.data[1].updated_at}</div>
         <div className="kharid">خرید:&nbsp;{arz.sana.data[1].p}</div>
         <div className="forosh">فروش:&nbsp;{arz.sana.data[17].p}</div>
         </div>
         ) : ('')}
         {(typeof arz.sana != "undefined") ? (
         <div className="arz_box">دلار کانادا
+        <div className="update"> تاریخ بروزرسانی : &nbsp;{arz.sana.data[0].updated_at}</div>
         <div className="kharid">خرید:&nbsp;{arz.sana.data[2].p}</div>
         <div className="forosh">فروش:&nbsp;{arz.sana.data[18].p}</div>
         </div>
         ) : ('')}
         {(typeof arz.sana != "undefined") ? (
         <div className="arz_box">یورو
+        <div className="update"> تاریخ بروزرسانی : &nbsp;{arz.sana.data[0].updated_at}</div>
         <div className="kharid">خرید:&nbsp;{arz.sana.data[3].p}</div>
         <div className="forosh">فروش:&nbsp;{arz.sana.data[19].p}</div>
         </div>
         ) : ('')}
+      
         {(typeof arz.sana != "undefined") ? (
         <div className="arz_box">پوند انگلیس
+        <div className="update"> تاریخ بروزرسانی : &nbsp;{arz.sana.data[0].updated_at}</div>
         <div className="kharid">خرید:&nbsp;{arz.sana.data[4].p}</div>
         <div className="forosh">فروش:&nbsp;{arz.sana.data[20].p}</div>
         </div>
@@ -63,7 +68,7 @@ import react, {useState} from 'react'
        {(typeof arz.sana != "undefined") ? (
         <div className="arz_box">روپیه هند
         <div className="kharid">خرید:&nbsp;{arz.sana.data[7].p}</div>
-        <div className="forosh">فروش:&nbsp;{arz.sana.data[23].p}</div>
+        <div className="forosh">فروش:&nbsp;{arz.sana.data[13].p}</div>
         </div>
          ) : ('')}
 
