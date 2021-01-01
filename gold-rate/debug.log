@@ -5,3 +5,8 @@
 [1231/174141.921:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
 [1231/182737.374:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
 [0101/105645.544:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\ASUS\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\0e099a5a-974b-472c-81f5-45cd29c59a0a: The system cannot find the path specified. (0x3)
+[0101/142332.518:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[0101/144321.018:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\ASUS\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\a5fc96c5-b036-4a10-98f2-3917a5985248: The system cannot find the path specified. (0x3)
+[0101/144321.059:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0101/144321.060:ERROR:exception_snapshot_win.cc(99)] thread ID 4336 not found in process
+[0101/144321.061:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
