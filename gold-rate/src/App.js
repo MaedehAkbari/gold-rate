@@ -14,8 +14,8 @@ import react, {useState} from 'react'
     <div className="app">
       
     <main>
-      
-      <div className="arz"> قیمت ارز
+    <div className="Header"> قیمت ارز و طلا  </div>
+      <div className="arz"> 
       {(typeof arz.sana != "undefined") ? (
       <div className="arz_box">دلار آمریکا     
         <div className="kharid">خرید:&nbsp;{arz.sana.data[0].p}</div> 
